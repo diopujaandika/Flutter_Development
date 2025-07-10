@@ -1,4 +1,4 @@
-// ///StatelessWidget
+// ///StatelessWidget [MyApp]
 // import 'package:flutter/material.dart';
 //
 // void main() {
@@ -43,23 +43,77 @@
 //   }
 // }
 
+/// Contoh Statefull Widget pada [ContohStateful] dan [_ContohStatefulState]
+
+// import 'package:flutter/material.dart';
+//
+// class ContohStateful extends StatefulWidget{
+//   final String parameterWidget; // ini paramter widget
+//   const ContohStateful ({Key? key, required this.parameterWidget}) : super(key: key);
+//
+//   @override
+//   State<ContohStateful> createState() => _ContohStatefulState();
+// }
+//
+// class _ContohStatefulState extends State<ContohStateful>{
+//   String _dataState;
+//
+//   @override
+//   Widget build(BuildContext context){
+//     //isi sebuah widget
+//   }
+// }
+
+///Contoh StatefulWidget Basic [BiggerText] dan [_BiggerTextState]
+
 import 'package:flutter/material.dart';
 
-///Statefull Widget
+void main() => runApp(MyApp());
 
-class ContohStateful extends StatefulWidget{
-  final String parameterWidget; // ini paramter widget
-  const ContohStateful ({Key? key, required this.parameterWidget}) : super(key: key);
-
+class MyApp extends StatelessWidget{
   @override
-  State<ContohStateful> createState() => _ContohStatefulState();
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const Scaffold(
+        body: Center(
+          child: BiggerText(text: "Helo World!"), //Ubah widget Heading ke Perubahan Text
+        )
+      )
+    );
+  }
 }
 
-class _ContohStatefulState extends State<ContohStateful>{
-  String _dataState;
+class BiggerText extends StatefulWidget{
+  final String text;
+
+  const BiggerText({Key? key, required this.text}) : super(key: key);
+
+  @override
+  State<BiggerText> createState() => _BiggerTextState();
+}
+
+class _BiggerTextState extends State<BiggerText>{
+  double _textSize = 16.0;
 
   @override
   Widget build(BuildContext context){
-    //isi sebuah widget
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Text(widget.text, style: TextStyle(fontSize: _textSize),),
+        ElevatedButton(
+          child: const Text("Perbesar"),
+          onPressed: (){
+            setState(() {
+              _textSize = 32.0;
+            });
+          },
+        )
+      ],
+    );
   }
 }
