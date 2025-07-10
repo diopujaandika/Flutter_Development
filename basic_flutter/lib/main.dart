@@ -1,3 +1,4 @@
+///StatelessWidget
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const Scaffold(
         body: Center(
-          child: Heading(
+          child: Heading(  //mengubah widget Text
             text: "Hello World!",
           ),
         ),
@@ -26,9 +27,9 @@ class MyApp extends StatelessWidget {
 }
 
 class Heading extends StatelessWidget{
-  final String text;
+  final String text; //state text bersifat final
 
-  const Heading({Key? key, required this.text}) : super(key: key);
+  const Heading({Key? key, required this.text}) : super(key: key); //lalu state text masuk ke constructor
 
   @override
   Widget build(BuildContext context){
