@@ -109,7 +109,7 @@ class _BiggerTextState extends State<BiggerText>{
           child: const Text("Perbesar"),
           onPressed: (){
             setState(() {
-              _textSize = 32.0;
+              _textSize = 32.0; //Ukuran text diubah menjadi 32
             });
           },
         )
