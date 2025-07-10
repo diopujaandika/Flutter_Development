@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 ///Scaffold
@@ -8,12 +7,28 @@ import 'package:flutter/material.dart';
 ///2. Body,
 ///3. FloatingActionButton
 
-class FirstScreen extends StatelessWidget{
-  const FirstScreen({Key? key} : super(key: key));
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+        home: const FirstScreen(), //
+    );
+  }
+}
+class FirstScreen extends StatelessWidget{
+  const FirstScreen({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    //TODO: implement build
     return Scaffold();
   }
 }
