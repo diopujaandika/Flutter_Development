@@ -57,6 +57,33 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  assets:
+    - assets/cinema/
+    - assets/coffee/
+    - assets/food-delivery/product/
+    - assets/food-delivery/
+    - assets/food-delivery/icon/
+    - assets/grocery/
+    - assets/football/
+    - assets/plant-shop/
+    - assets/food-recipe/
+    - assets/banking-app/
+    - assets/doctor-appoinment/
+    - assets/food-delivery(foodel)/
+    - assets/food-delivery(foodel)/ramen/
+    - assets/food-delivery(foodel)/burger/
+    - assets/dashoboard/
+    - assets/pdf/
+    - assets/coffee-shop/
+    - assets/fashion/
+    - assets/fashion/category_image/
+    - assets/fashion/category_image/sub_category/
+    - assets/img/
+    - assets/health/
+    - assets/educational-app/
+    - assets/agriplant/
+    - assets/grocery-ui/
+    - assets/job-finder/
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
