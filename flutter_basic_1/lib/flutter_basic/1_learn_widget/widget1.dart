@@ -97,6 +97,36 @@ class _HomePageState extends State<HomePage>{
           ],
         ),
       ),
+
+      //Konten Utama
+      body: Container(
+        width: double.infinity,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Color(0xFF2196F3), Color(0xFF21CBF3)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: Center(
+          child: Card(
+            elevation: 8,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            margin: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.flutter_dash,
+                  size: 80,
+                  color: Colors.blue,
+                ),
+              ],
+            ),
+          ),
+        ),
+      )
     );
   }
 }
