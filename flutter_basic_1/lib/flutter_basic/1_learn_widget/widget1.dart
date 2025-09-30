@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget{
   }
 }
 
-//Halaman utama Applikasi
+//Halaman utama Aplikasi
 class HomePage extends StatelessWidget{
   const HomePage({super.key});
 
@@ -33,9 +33,12 @@ class HomePage extends StatelessWidget{
         //Container untuk background gradient
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF2196F3), Color(0xFF21CBF3)] //Warna biru Gradient
-          )
+            colors: [Color(0xFF2196F3), Color(0xFF21CBF3)], //Warna biru Gradient
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
         ),
+
       ),
     );
   }
