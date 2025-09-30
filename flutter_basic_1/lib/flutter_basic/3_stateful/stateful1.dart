@@ -1,5 +1,23 @@
 import 'package:flutter/material.dart';
 
+class MyApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return MaterialApp(
+      title: 'Flutter',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const Scaffold(
+        body: Center(
+          child: BiggerText(text: "Hello World"),
+        )
+      ),
+    );
+  }
+}
+
 class BiggerText extends StatefulWidget{
   final String text;
 
