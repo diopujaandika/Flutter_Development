@@ -122,11 +122,53 @@ class _HomePageState extends State<HomePage>{
                   size: 80,
                   color: Colors.blue,
                 ),
+                const SizedBox(height: 16),
+                const Text(
+                  "Hello, Dio Puja Andika!",
+                  style: TextStyle(
+                    fontSize: 26,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                const Text(
+                  "Welcome to Flutter complete UI Catalog",
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton.icon(
+                  onPressed: (){},
+                  icon: const Icon(Icons.arrow_forward),
+                  label: const Text("Get Started!"),
+                ),
               ],
             ),
           ),
         ),
-      )
+      ),
+      // Navigasi bawah
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedIndex,
+        onTap: (index) {
+          setState(() {
+            _selectedIndex = index; // Update halaman
+          });
+        },
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: "Profile",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: "Settings",
+          ),
+        ],
+      ),
     );
   }
 }
