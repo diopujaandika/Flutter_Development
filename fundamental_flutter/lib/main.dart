@@ -3,6 +3,7 @@ import 'package:fundamental_flutter/1_StatelessWidget.dart';
 import 'package:fundamental_flutter/2_StatefulWidget.dart';
 import '0_Widget.dart';
 import '8_Button.dart';
+import '9_InputWidget.dart';
 
 void main(){
   runApp(MyApp());
@@ -61,14 +62,12 @@ class ScreenApp extends StatelessWidget{
           )
         ],
       ),
-      body: Center(
+      body: ListView(
         child: Column(
           children: [
-            ButtonElevated(),
-            ButtonTextButton(),
-            ButtonOutlined(),
-            ButtonIcon(),
-            ButtonDropdown(),
+            InputTextField(),
+            SwitchButton(),
+            RadioButton(),
           ],
           // text: 'Hello Flutter',
         ),
