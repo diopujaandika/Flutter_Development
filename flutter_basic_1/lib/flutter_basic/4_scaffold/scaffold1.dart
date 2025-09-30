@@ -42,7 +42,12 @@ class FirstScreen extends StatelessWidget{
 
         body: const Center(
           child: Text('Hello World!'),
-        )
+        ),
+
+        floatingActionButton: FloatingActionButton(
+            onPressed: (){},
+            child: const Icon(Icons.add),
+        ),
       );
   }
 }
