@@ -22,24 +22,43 @@ class MyApp extends StatelessWidget{
 }
 
 //Halaman utama Aplikasi
-class HomePage extends StatelessWidget{
+class HomePage extends StatefulWidget{
   const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage>{
+  int _selectedIndex = 0; //Untuk Buttom NavigationBar
+
+  //Daftar Halaman
+  final List<Widget> _pages = const [
+    Center(child: Text("Home Page", style: TextStyle(fontSize: 24))),
+    Center(child: Text("Profile Page", style: TextStyle(fontSize: 24))),
+    Center(child: Text("Settings", style: TextStyle(fontSize: 24))),
+  ];
 
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      //Scaffold adalah struktur dari halaman (AppBar, Body, FloatingButton, dll)
-      body: Container(
-        //Container untuk background gradient
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Color(0xFF2196F3), Color(0xFF21CBF3)], //Warna biru Gradient
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+      //Bagian atas aplikasi
+      appBar: AppBar(
+        title: const Text("Flutter Complate UI"),
+        centerTitle: true,
+        actions: [
+          IconButton(
+              onPressed: (){},
+              icon: const Icon(Icons.notifications),
           ),
-        ),
-
+          IconButton(
+              onPressed: (){},
+              icon: const Icon(Icons.search),
+          )
+        ],
       ),
+
+      
     );
   }
 }
