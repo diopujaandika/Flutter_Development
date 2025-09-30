@@ -19,6 +19,26 @@ class FirstScreen extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-      return Scaffold();
+      return Scaffold(
+        appBar: AppBar(
+          title: const Text('Fist Screen'),
+          actions: <Widget>[
+            IconButton(
+              icon: const Icon(
+                Icons.search,
+                color: Colors.black
+              ),
+              onPressed: (){},
+            )
+          ],
+          leading: IconButton(
+              onPressed: (){},
+              icon: const Icon(
+                Icons.menu,
+                color: Colors.black,
+              )
+          ),
+        ),
+      );
   }
 }
