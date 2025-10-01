@@ -58,7 +58,26 @@ class HomePage extends StatelessWidget{
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
-          Text('Row Expended'),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(width: 300, height: 80, color: Colors.red),
+                Container(width: 300, height: 80, color: Colors.green),
+                Container(width: 300, height: 80, color: Colors.blue),
+              ],
+            ),
+          ),
+          Wrap(
+            spacing: 10, // jarak horizontal
+            runSpacing: 10, // jarak vertical
+            children: [
+              Container(width: 300, height: 100, color: Colors.red),
+              Container(width: 300, height: 100, color: Colors.green),
+              Container(width: 300, height: 100, color: Colors.blue),
+            ],
+          ),
           Row(
             children: <Widget>[
               Expanded(
