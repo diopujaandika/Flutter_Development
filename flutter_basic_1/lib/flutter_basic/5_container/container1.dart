@@ -48,8 +48,22 @@ class FirstScreen extends StatelessWidget{
       ),
       body: Center(
         child: Container(
+          // color: Colors.blueAccent,
+          padding: const EdgeInsets.all(10),
+          width: 200,
+          height: 100,
           decoration: BoxDecoration(
             color: Colors.redAccent,
+            // shape: BoxShape.circle,
+            border: Border.all(color: Colors.green, width: 3),
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: const [
+              BoxShadow(
+                color: Colors.black,
+                offset: Offset(3, 6),
+                blurRadius: 10,
+              )
+            ]
           ),
           child: const Text(
             'Hello World',
