@@ -49,7 +49,7 @@ class FirstScreen extends StatelessWidget{
       body: Center(
         child: Container(
           // color: Colors.blueAccent,
-          padding: const EdgeInsets.all(10),
+          padding: const EdgeInsets.all(5),
           width: 200,
           height: 100,
           decoration: BoxDecoration(
