@@ -1,22 +1,34 @@
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget{
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp ({Key? key}) : super(key: key);
 
   @override
-  Widget build( BuildContext context){
+  Widget build(BuildContext context){
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Hello, World!'),
-        ),
-        body: const Center(
-          child: Text('Welcome to Flutter'),
-        ),
+      title: 'Wisata Bandung',
+      theme: ThemeData(),
+      debugShowCheckedModeBanner: false,
+      home: const DetailScreen(),
+    );
+  }
+}
+
+class DetailScreen extends StatelessWidget{
+  const DetailScreen({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+      body: Column(
+        children: <Widget>[
+          Container(
+            child: Text(
+                 'Farm House Lembang'
+            ),
+
+          ),
+        ],
       ),
     );
   }
