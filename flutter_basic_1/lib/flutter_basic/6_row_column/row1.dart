@@ -24,6 +24,7 @@ class HomePage extends StatelessWidget{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blueAccent,
         leading: IconButton(
             onPressed: (){},
             icon: Icon(
@@ -54,27 +55,76 @@ class HomePage extends StatelessWidget{
         ],
       ),
 
-      body: Row(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
-          Container(
-            width: 300,
-            height: 180,
-            margin: const EdgeInsets.all(40),
-            decoration: BoxDecoration(
-              color: Colors.blueGrey,
-              border: Border.all(color: Colors.white54),
-              borderRadius: BorderRadius.circular(10)
-            ),
-            alignment: Alignment.center,
-            child: const Text(
-              'Flutter',
-              style: TextStyle(
-                fontSize: 30,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
+          Text('Row Expended'),
+          Row(
+            children: <Widget>[
+              Expanded(
+                child: Container(
+                  width: 300,
+                  height: 180,
+                  margin: const EdgeInsets.all(40),
+                  decoration: BoxDecoration(
+                      color: Colors.blueGrey,
+                      border: Border.all(color: Colors.white54),
+                      borderRadius: BorderRadius.circular(10)
+                  ),
+                  alignment: Alignment.center,
+                  child: const Text(
+                    'Flutter',
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ),
-            ),
+              Expanded(
+                child: Container(
+                  width: 300,
+                  height: 180,
+                  margin: const EdgeInsets.all(40),
+                  decoration: BoxDecoration(
+                      color: Colors.blueGrey,
+                      border: Border.all(color: Colors.white54),
+                      borderRadius: BorderRadius.circular(10)
+                  ),
+                  alignment: Alignment.center,
+                  child: const Text(
+                    'Flutter',
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  width: 300,
+                  height: 180,
+                  margin: const EdgeInsets.all(40),
+                  decoration: BoxDecoration(
+                      color: Colors.blueGrey,
+                      border: Border.all(color: Colors.white54),
+                      borderRadius: BorderRadius.circular(10)
+                  ),
+                  alignment: Alignment.center,
+                  child: const Text(
+                    'Flutter',
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ],
           )
         ],
       ),
