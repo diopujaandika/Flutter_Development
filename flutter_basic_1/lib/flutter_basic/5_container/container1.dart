@@ -28,8 +28,37 @@ class FirstScreen extends StatelessWidget{
             color: Colors.black,
           ),
           onPressed: (){},
-        )
+        ),
+        title: Text(
+          'Flutter App',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 24,
+          ),
+        ),
+        actions: <Widget>[
+          IconButton(
+              onPressed: (){},
+              icon: const Icon(
+                  Icons.person,
+                  color: Colors.black,
+              )
+          )
+        ],
       ),
+      body: Center(
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.redAccent,
+          ),
+          child: const Text(
+            'Hello World',
+            style: TextStyle(
+              fontSize: 40
+            )
+          ),
+        ),
+      )
     );
   }
 }
