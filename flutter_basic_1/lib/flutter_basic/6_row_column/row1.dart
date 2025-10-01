@@ -55,98 +55,102 @@ class HomePage extends StatelessWidget{
         ],
       ),
 
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: <Widget>[
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Container(width: 300, height: 80, color: Colors.red),
-                Container(width: 300, height: 80, color: Colors.green),
-                Container(width: 300, height: 80, color: Colors.blue),
-              ],
-            ),
-          ),
-          Wrap(
-            spacing: 10, // jarak horizontal
-            runSpacing: 10, // jarak vertical
-            children: [
-              Container(width: 300, height: 100, color: Colors.red),
-              Container(width: 300, height: 100, color: Colors.green),
-              Container(width: 300, height: 100, color: Colors.blue),
-            ],
-          ),
-          Row(
+      body: ListView(
+        children: [
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              Expanded(
-                child: Container(
-                  width: 300,
-                  height: 180,
-                  margin: const EdgeInsets.all(40),
-                  decoration: BoxDecoration(
-                      color: Colors.blueGrey,
-                      border: Border.all(color: Colors.white54),
-                      borderRadius: BorderRadius.circular(10)
-                  ),
-                  alignment: Alignment.center,
-                  child: const Text(
-                    'Flutter',
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(width: 300, height: 180, color: Colors.red),
+                    Container(width: 300, height: 180, color: Colors.green),
+                    Container(width: 300, height: 180, color: Colors.blue),
+                  ],
                 ),
               ),
-              Expanded(
-                child: Container(
-                  width: 300,
-                  height: 180,
-                  margin: const EdgeInsets.all(40),
-                  decoration: BoxDecoration(
-                      color: Colors.blueGrey,
-                      border: Border.all(color: Colors.white54),
-                      borderRadius: BorderRadius.circular(10)
-                  ),
-                  alignment: Alignment.center,
-                  child: const Text(
-                    'Flutter',
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+              Wrap(
+                spacing: 10, // jarak horizontal
+                runSpacing: 10, // jarak vertical
+                children: [
+                  Container(width: 300, height: 100, color: Colors.red),
+                  Container(width: 300, height: 100, color: Colors.green),
+                  Container(width: 300, height: 100, color: Colors.blue),
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      width: 300,
+                      height: 180,
+                      margin: const EdgeInsets.all(40),
+                      decoration: BoxDecoration(
+                          color: Colors.blueGrey,
+                          border: Border.all(color: Colors.white54),
+                          borderRadius: BorderRadius.circular(10)
+                      ),
+                      alignment: Alignment.center,
+                      child: const Text(
+                        'Flutter',
+                        style: TextStyle(
+                          fontSize: 30,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                   ),
-                ),
-              ),
-              Expanded(
-                child: Container(
-                  width: 300,
-                  height: 180,
-                  margin: const EdgeInsets.all(40),
-                  decoration: BoxDecoration(
-                      color: Colors.blueGrey,
-                      border: Border.all(color: Colors.white54),
-                      borderRadius: BorderRadius.circular(10)
-                  ),
-                  alignment: Alignment.center,
-                  child: const Text(
-                    'Flutter',
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                  Expanded(
+                    child: Container(
+                      width: 300,
+                      height: 180,
+                      margin: const EdgeInsets.all(40),
+                      decoration: BoxDecoration(
+                          color: Colors.blueGrey,
+                          border: Border.all(color: Colors.white54),
+                          borderRadius: BorderRadius.circular(10)
+                      ),
+                      alignment: Alignment.center,
+                      child: const Text(
+                        'Flutter',
+                        style: TextStyle(
+                          fontSize: 30,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                   ),
-                ),
-              ),
+                  Expanded(
+                    child: Container(
+                      width: 300,
+                      height: 180,
+                      margin: const EdgeInsets.all(40),
+                      decoration: BoxDecoration(
+                          color: Colors.blueGrey,
+                          border: Border.all(color: Colors.white54),
+                          borderRadius: BorderRadius.circular(10)
+                      ),
+                      alignment: Alignment.center,
+                      child: const Text(
+                        'Flutter',
+                        style: TextStyle(
+                          fontSize: 30,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              )
             ],
-          )
+          ),
         ],
-      ),
+      )
     );
   }
 }
