@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 // import 'flutter_basic/codelab1.dart';
-import 'flutter_basic/8_input/controller1.dart';
+import 'flutter_basic/8_input/input1.dart';
+//import 'flutter_basic/8_input/controller1.dart';
 // import 'flutter_basic/7_button/button1.dart';
 // import 'flutter_basic/7_button/button2.dart';
 // import 'flutter_basic/6_row_column/row1.dart';
@@ -13,6 +14,5 @@ import 'flutter_basic/8_input/controller1.dart';
 // import 'package:flutter_basic_1/flutter_basic/1_widget.dart';
 void main() {
   // runApp(const MyApp());
-  // runApp( MyApp());
-  runApp(FirstScreen());
+  runApp( MyApp());
 }

@@ -1,5 +1,21 @@
 import 'package:flutter/material.dart';
 
+class MyApp extends StatelessWidget{
+  const MyApp ({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context){
+    return MaterialApp(
+      title: 'Flutter App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      debugShowCheckedModeBanner: false,
+      home: FirstScreen(),
+    );
+  }
+}
+
 class FirstScreen extends StatefulWidget{
   const FirstScreen({Key? key}) : super(key: key);
 
@@ -31,5 +47,11 @@ class _FirstScreenState extends State<FirstScreen>{
         ),
       )
     );
+  }
+
+  @override
+  void dispose(){
+    _controller.dispose();
+    super.dispose();
   }
 }
