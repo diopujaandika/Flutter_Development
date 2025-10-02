@@ -38,7 +38,15 @@ class HomePage extends StatelessWidget{
                       onPressed: (){},
                       child: const Text('Text Button')
                   ),
-                  
+                  OutlinedButton(
+                      onPressed: (){},
+                      child: const Text('Outlined Button')
+                  ),
+                  IconButton(
+                      onPressed: (){},
+                      icon: Icon(Icons.volume_up),
+                      tooltip: 'Increase volume by 10',
+                  )
                 ],
               )
             ],
@@ -53,3 +61,4 @@ class HomePage extends StatelessWidget{
     );
   }
 }
+
