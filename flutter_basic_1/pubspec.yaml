@@ -58,12 +58,12 @@ flutter:
   uses-material-design: true
 
   assets:
-    -  images/android.png
+    -  images/
 
   fonts:
     -  family: Oswald
        fonts:
-         -  asset: font/Oswald/Oswald-Regular.ttf
+         -  asset: fonts/Oswald/Oswald-Regular.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:

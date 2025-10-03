@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// import 'flutter_basic/codelab1.dart';
+import 'flutter_basic/codelab1.dart';
 // import 'flutter_basic/8_input/textField1.dart';
 // import 'flutter_basic/8_input/controller1.dart';
 // import 'flutter_basic/8_input/switch1.dart';
@@ -8,7 +8,8 @@ import 'package:flutter/material.dart';
 // import 'flutter_basic/8_input/checkbox1.dart';
 // import 'flutter_basic/9_image/imageNetwork1.dart';
 // import 'flutter_basic/9_image/imageAsset1.dart';
-import 'flutter_basic/10_font/font1.dart';
+// import 'flutter_basic/10_font/font1.dart';
+// import 'flutter_basic/detail_screen1.dart';
 // import 'flutter_basic/7_button/button1.dart';
 // import 'flutter_basic/7_button/button2.dart';
 // import 'flutter_basic/6_row_column/row1.dart';
