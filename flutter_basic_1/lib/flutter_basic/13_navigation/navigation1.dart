@@ -14,7 +14,9 @@ class MyApp extends StatelessWidget{
 }
 
 class FirstScreen extends StatelessWidget {
-  const FirstScreen({Key? key}) : super(key: key);
+  // const FirstScreen({Key? key}) : super(key: key);
+
+  final String message = 'Hello from First Screen!';
 
   @override
   Widget build(BuildContext context) {
@@ -26,9 +28,8 @@ class FirstScreen extends StatelessWidget {
         child: ElevatedButton(
           child: const Text('Pindah Screen'),
           onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context){
-              return const SecondScreen();
-            }));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => SecondScreen(message)));
           },
         ),
       ),
